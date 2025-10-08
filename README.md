@@ -1,134 +1,96 @@
-# 🌐 MULTI-CLOUD LEAST PRIVILEGE MASTERY
+# 🌐 Multi-Cloud Least Privilege Mastery
 
 <div align="center">
 
-![Multi-Cloud](https://img.shields.io/badge/AWS-Azure-GCP-orange?style=for-the-badge&logo=azure-pipelines)
-![Security](https://img.shields.io/badge/Security-Enterprise-red?style=for-the-badge)
-![Level](https://img.shields.io/badge/Beginner->Advanced-green?style=for-the-badge)
+**From Cloud Novice ➝ Security Architect**
 
-**Transform from Cloud Novice to Security Architect through Least Privilege**
+*Master AWS, Azure, and GCP Security with the Principle of Least Privilege*
 
 </div>
-Section 2: Course Impact
 
-text
-## 🎯 What You'll Achieve
+---
 
-```mermaid
-graph LR
-    A[🔓 Current State] --> B[📚 Learn Fundamentals]
-    B --> C[🛡️ Implement Security]
-    C --> D[🚀 Become Architect]
-    
-    style A fill:#ff6b6b
-    style D fill:#51cf66
-🚀 Quick Start Paths
-🎓 Choose Your Level
-Level	Experience	Time	Outcome
-🟢 Beginner	0-6 months	2 weeks	IAM & Basic Security
-🟡 Intermediate	6-18 months	4 weeks	Threat Detection
-🔴 Advanced	1.5+ years	6 weeks	Architecture & Automation
-text
+## 🎯 Learning Outcomes
 
-**Section 3: Learning Map**
-🗺️ Learning Journey
-flowchart TD
-    Start[🎯 Start Here] --> Beginner[📘 Beginner]
-    Start --> Intermediate[📗 Intermediate] 
-    Start --> Advanced[📕 Advanced]
-    
-    Beginner --> B1[IAM Fundamentals]
-    Beginner --> B2[Access Models]
-    Beginner --> B3[Read-Only Lab]
-    
-    Intermediate --> I1[Enforce Least Privilege]
-    Intermediate --> I2[Failure Analysis]
-    Intermediate --> I3[Cleanup Lab]
-    
-    Advanced --> A1[Zero Trust]
-    Advanced --> A2[Cross-Cloud Design]
-    Advanced --> A3[Capstone Project]
-text
+- **Beginner**: Core IAM concepts across AWS, Azure, and GCP  
+- **Intermediate**: Apply least privilege and detect real security threats  
+- **Advanced**: Architect zero-trust, multi-cloud security systems  
 
-**Section 4: Navigation Hub**
-📚 COURSE NAVIGATION
-📘 BEGINNER TRACK
-🔰 Access Models - Security foundations
+---
 
-🛡️ IAM Fundamentals - AWS, Azure, GCP identity
+## 🚀 Quick Start
 
-🧪 Read-Only Lab - First hands-on
+### Choose Your Learning Path
 
-📗 INTERMEDIATE TRACK
-⚡ Enforcing LP - Design patterns
+**🟢 Beginner Track (2 weeks)**  
+- Understand IAM basics for AWS, Azure, and GCP  
+- Learn core access control models  
+- Complete your first IAM security lab  
 
-🚨 Failure Scenarios - Real breaches
+**🟡 Intermediate Track (4 weeks)**  
+- Design and enforce least privilege policies  
+- Explore real-world breach scenarios  
+- Identify and remove unused permissions  
 
-🔧 Cleanup Lab - Security hardening
+**🔴 Advanced Track (6 weeks)**  
+- Implement zero-trust architectures  
+- Design cross-cloud secure systems  
+- Complete the multi-cloud capstone project  
 
-📕 ADVANCED TRACK
-🛡️ Zero Trust - Never trust, always verify
+---
 
-🌐 Cross-Cloud - Unified security
+## 📚 Course Modules
 
-🏆 Capstone - Enterprise project
+### Beginner Level
+- [Access Models](beginner/01_intro_access_models.md)  
+- [IAM Fundamentals](beginner/02_iam_fundamentals.md)  
+- [Read-Only Access Lab](beginner/03_lab_readonly_access.md)  
 
-text
+### Intermediate Level
+- [Enforcing Least Privilege](intermediate/04_enforcing_least_privilege.md)  
+- [Failure Scenarios](intermediate/05_failure_scenario.md)  
+- [Unused Permissions Lab](intermediate/06_lab_unused_permissions.md)  
 
-**Section 5: Skills & Architecture**
-🎖️ Skills Mastery
-🔐 Technical Progression
-graph LR
-    A[IAM Basics] --> B[RBAC]
-    B --> C[ABAC]
-    C --> D[JIT Access]
-    D --> E[Zero Trust]
-🏗️ Multi-Cloud Architecture
-graph TB
-    subgraph Identity
-        A[Azure AD] --> C[Federation]
-        B[Okta] --> C
-    end
-    
-    subgraph Policy
-        D[AWS SCP] --> F[Governance]
-        E[Azure Policy] --> F
-    end
-    
-    Identity --> Policy
-text
+### Advanced Level
+- [Zero Trust Architecture](advanced/07_zero_trust_least_privilege.md)  
+- [Cross-Cloud Security Design](advanced/08_cross_cloud_architecture.md)  
+- [Capstone Project](advanced/09_capstone_project.md)  
 
-**Section 6: Audience & Getting Started**
-👥 Who This Is For
-Cloud Engineers → Security specialization
+---
 
-Security Analysts → Multi-cloud expansion
+## 👥 Who Should Take This Course?
 
-DevOps Engineers → Security pipelines
+- Cloud Engineers expanding into security  
+- Security Analysts exploring multi-cloud IAM  
+- DevOps Engineers implementing secure pipelines  
+- IT Managers overseeing cloud security teams  
+- Professionals pursuing cloud security careers  
 
-IT Managers → Cloud security oversight
+---
 
-Career Changers → Cloud security entry
+## 🛠️ Getting Started
 
-🚀 Getting Started
-bash
-# Clone and begin
+```bash
+# Clone this repository
 git clone https://github.com/Olagoldstx/multi-cloud-least-privilege-mastery
+
+# Start with beginner track
 cd multi-cloud-least-privilege-mastery/beginner
+🎖️ Skills You’ll Master
+Multi-cloud IAM (AWS, Azure, GCP)
 
-# Start learning
-cat 01_intro_access_models.md
-text
+Least privilege implementation
 
-**Section 7: Final Call-to-Action**
+Security threat detection
+
+Zero-trust principles
+
+Cloud security governance
+
 <div align="center">
-🎯 Ready to Transform Your Cloud Security?
-From over-permissioned chaos to least privilege mastery
+🎯 Start Learning Today
+🟢 Beginner • 🟡 Intermediate • 🔴 Advanced
 
-🚀 Start Beginner Track •
-🛡️ Jump to Intermediate •
-🌐 Go Advanced
+⭐ Star this repo if you find it helpful!
 
-⭐ Star this repo to support open security education!
-
-</div>
+</div> ```

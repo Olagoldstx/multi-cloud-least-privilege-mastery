@@ -1,162 +1,134 @@
-
 # 🌐 MULTI-CLOUD LEAST PRIVILEGE MASTERY
 
 <div align="center">
 
-![Multi-Cloud Security](https://img.shields.io/badge/Multi--Cloud-AWS%20|%20Azure%20|%20GCP-orange?style=for-the-badge)
-![Security Level](https://img.shields.io/badge/Security-Enterprise%20Grade-red?style=for-the-badge)
-![Course Level](https://img.shields.io/badge/Level-Beginner%20to%20Advanced-green?style=for-the-badge)
+![Multi-Cloud](https://img.shields.io/badge/AWS-Azure-GCP-orange?style=for-the-badge&logo=azure-pipelines)
+![Security](https://img.shields.io/badge/Security-Enterprise-red?style=for-the-badge)
+![Level](https://img.shields.io/badge/Beginner->Advanced-green?style=for-the-badge)
 
-**Transform from Cloud Novice to Security Architect through the Power of Least Privilege**
+**Transform from Cloud Novice to Security Architect through Least Privilege**
 
 </div>
+Section 2: Course Impact
 
-## 🎯 What This Course WILL Do For You
-
-## 🎯 What This Course WILL Do For You
+text
+## 🎯 What You'll Achieve
 
 ```mermaid
-journey
-    title Your Cloud Security Transformation
-    section Current State
-      Over-Permissioned Chaos: 5
-      Security Incidents: 3  
-      Compliance Violations: 4
-    section After This Course
-      Least Privilege Master: 10
-      Zero Trust Architect: 9
-      Multi-Cloud Guardian: 8
-   
+graph LR
+    A[🔓 Current State] --> B[📚 Learn Fundamentals]
+    B --> C[🛡️ Implement Security]
+    C --> D[🚀 Become Architect]
+    
+    style A fill:#ff6b6b
+    style D fill:#51cf66
+🚀 Quick Start Paths
+🎓 Choose Your Level
+Level	Experience	Time	Outcome
+🟢 Beginner	0-6 months	2 weeks	IAM & Basic Security
+🟡 Intermediate	6-18 months	4 weeks	Threat Detection
+🔴 Advanced	1.5+ years	6 weeks	Architecture & Automation
+text
 
-🚀 Quick Start - Choose Your Path
-
-🎓 Learning Tracks
-Track	Target Role	Time	Outcome
-🟢 Beginner	Cloud Newbie	2 weeks	IAM Fundamentals & Basic Security
-🟡 Intermediate	Security Analyst	4 weeks	Threat Detection & Remediation
-🔴 Advanced	Security Architect	6 weeks	Enterprise Architecture & Automation
-🟣 Supreme	Cloud CISO	8 weeks	Strategy & Governance
-🎮 Interactive Learning Map
+**Section 3: Learning Map**
+🗺️ Learning Journey
 flowchart TD
-    A[🚀 Start Here] --> B[📘 Beginner Track]
-    A --> C[📗 Intermediate Track] 
-    A --> D[📕 Advanced Track]
+    Start[🎯 Start Here] --> Beginner[📘 Beginner]
+    Start --> Intermediate[📗 Intermediate] 
+    Start --> Advanced[📕 Advanced]
     
-    B --> B1[IAM Fundamentals]
-    B --> B2[Access Models]
-    B --> B3[Read-Only Lab]
+    Beginner --> B1[IAM Fundamentals]
+    Beginner --> B2[Access Models]
+    Beginner --> B3[Read-Only Lab]
     
-    C --> C1[Enforcing Least Privilege]
-    C --> C2[Failure Scenarios]
-    C --> C3[Unused Permissions Lab]
+    Intermediate --> I1[Enforce Least Privilege]
+    Intermediate --> I2[Failure Analysis]
+    Intermediate --> I3[Cleanup Lab]
     
-    D --> D1[Zero Trust Architecture]
-    D --> D2[Cross-Cloud Design]
-    D --> D3[Capstone Project]
-    
-    B3 --> C1
-    C3 --> D1
-📚 COURSE NAVIGATION HUB
-📘 BEGINNER TRACK (Start Here if New to Cloud Security)
-🔰 Introduction to Access Models
-Understand the evolution from open access to least privilege
+    Advanced --> A1[Zero Trust]
+    Advanced --> A2[Cross-Cloud Design]
+    Advanced --> A3[Capstone Project]
+text
 
-🛡️ IAM Fundamentals
-Master AWS, Azure, and GCP identity systems
+**Section 4: Navigation Hub**
+📚 COURSE NAVIGATION
+📘 BEGINNER TRACK
+🔰 Access Models - Security foundations
 
-🧪 Lab: Read-Only Access
-Your first hands-on security implementation
+🛡️ IAM Fundamentals - AWS, Azure, GCP identity
 
-📗 INTERMEDIATE TRACK (Security Analysts & Engineers)
-⚡ Enforcing Least Privilege
-Design patterns for enterprise security
+🧪 Read-Only Lab - First hands-on
 
-🚨 Failure Scenarios & Remediation
-Learn from real-world breaches and how to fix them
+📗 INTERMEDIATE TRACK
+⚡ Enforcing LP - Design patterns
 
-🔧 Lab: Remove Unused Permissions
-Practical security hardening exercises
+🚨 Failure Scenarios - Real breaches
 
-📕 ADVANCED TRACK (Security Architects & Leads)
-🛡️ Zero Trust + Least Privilege
-Architecting never-trust, always-verify systems
+🔧 Cleanup Lab - Security hardening
 
-🌐 Cross-Cloud Architecture
-Designing unified security across AWS, Azure, GCP
+📕 ADVANCED TRACK
+🛡️ Zero Trust - Never trust, always verify
 
-🏆 Capstone Project
-Build an enterprise-grade multi-cloud security framework
+🌐 Cross-Cloud - Unified security
 
-🎖️ SKILLS YOU'LL MASTER
-🔐 Technical Skills
-quadrantChart
-    title Cloud Security Skill Progression
-    x-axis "Foundation" --> "Expert"
-    y-axis "Basic" --> "Advanced"
-    "IAM Policies": [0.2, 0.3]
-    "Access Reviews": [0.5, 0.4]
-    "JIT Access": [0.7, 0.6]
-    "Zero Trust": [0.9, 0.8]
-    "Cross-Cloud": [0.95, 0.9]
-🛡️ Security Domains
-Domain	Beginner	Intermediate	Advanced
-Identity & Access	✅ Basic IAM	✅ Advanced RBAC	✅ Zero Trust JIT
-Data Protection	✅ Read-Only Access	✅ Encryption	✅ Cross-Cloud DLP
-Threat Detection	✅ Basic Monitoring	✅ Anomaly Detection	✅ Behavioral Analytics
-Compliance	✅ Basic Policies	✅ Automated Reviews	✅ Enterprise Governance
-🏗️ ARCHITECTURE OVERVIEW
-Multi-Cloud Security Framework
+🏆 Capstone - Enterprise project
+
+text
+
+**Section 5: Skills & Architecture**
+🎖️ Skills Mastery
+🔐 Technical Progression
+graph LR
+    A[IAM Basics] --> B[RBAC]
+    B --> C[ABAC]
+    C --> D[JIT Access]
+    D --> E[Zero Trust]
+🏗️ Multi-Cloud Architecture
 graph TB
-    subgraph IDENTITY_LAYER
-        A[Azure AD/Okta] --> B[SAML/OIDC Federation]
-        C[MFA/ Conditional Access] --> B
+    subgraph Identity
+        A[Azure AD] --> C[Federation]
+        B[Okta] --> C
     end
     
-    subgraph POLICY_LAYER
-        D[AWS SCPs] --> F[Central Governance]
+    subgraph Policy
+        D[AWS SCP] --> F[Governance]
         E[Azure Policy] --> F
-        G[GCP Org Policies] --> F
     end
     
-    subgraph ACCESS_LAYER
-        H[JIT Elevation] --> I[Time-Bound Sessions]
-        J[ABAC Rules] --> K[Dynamic Permissions]
-    end
-    
-    subgraph MONITORING_LAYER
-        L[CloudTrail] --> M[SIEM Correlation]
-        N[Activity Logs] --> M
-        O[Audit Logs] --> M
-    end
-    
-    IDENTITY_LAYER --> POLICY_LAYER
-    POLICY_LAYER --> ACCESS_LAYER
-    ACCESS_LAYER --> MONITORING_LAYER
-🎯 WHO IS THIS FOR?
-👨‍💻 Perfect For:
-Cloud Engineers wanting security specialization
+    Identity --> Policy
+text
 
-Security Analysts expanding to multi-cloud
+**Section 6: Audience & Getting Started**
+👥 Who This Is For
+Cloud Engineers → Security specialization
 
-DevOps Engineers implementing security pipelines
+Security Analysts → Multi-cloud expansion
 
-IT Managers overseeing cloud security
+DevOps Engineers → Security pipelines
 
-CISOs designing cloud security strategy
+IT Managers → Cloud security oversight
 
-Anyone tired of cloud security breaches!
+Career Changers → Cloud security entry
 
-🚀 GETTING STARTED
+🚀 Getting Started
 bash
-# Clone and begin your journey
-git clone https://github.com/YOUR-USERNAME/multi-cloud-least-privilege-mastery
+# Clone and begin
+git clone https://github.com/Olagoldstx/multi-cloud-least-privilege-mastery
 cd multi-cloud-least-privilege-mastery/beginner
+
+# Start learning
+cat 01_intro_access_models.md
+text
+
+**Section 7: Final Call-to-Action**
 <div align="center">
-🎯 READY TO BECOME A CLOUD SECURITY MASTER?
-Stop reading about security breaches. Start preventing them.
+🎯 Ready to Transform Your Cloud Security?
+From over-permissioned chaos to least privilege mastery
 
-🚀 START WITH BEGINNER TRACK •
-🛡️ JUMP TO INTERMEDIATE •
-🌐 GO ADVANCED
+🚀 Start Beginner Track •
+🛡️ Jump to Intermediate •
+🌐 Go Advanced
 
-⭐ Don't forget to star this repo if you're ready to transform your cloud security skills!
+⭐ Star this repo to support open security education!
+
+</div>

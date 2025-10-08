@@ -13,18 +13,23 @@
 
 ## 🎯 What This Course WILL Do For You
 
+## 🎯 What This Course WILL Do For You
+
 ```mermaid
 journey
     title Your Cloud Security Transformation
     section Current State
-      Over-Permissioned Chaos: 5: You
-      Security Incidents: 3: You
-      Compliance Violations: 4: You
+      Over-Permissioned Chaos: 5
+      Security Incidents: 3  
+      Compliance Violations: 4
     section After This Course
-      Least Privilege Master: 10: You
-      Zero Trust Architect: 9: You
-      Multi-Cloud Guardian: 8: You
+      Least Privilege Master: 10
+      Zero Trust Architect: 9
+      Multi-Cloud Guardian: 8
+   
+
 🚀 Quick Start - Choose Your Path
+
 🎓 Learning Tracks
 Track	Target Role	Time	Outcome
 🟢 Beginner	Cloud Newbie	2 weeks	IAM Fundamentals & Basic Security

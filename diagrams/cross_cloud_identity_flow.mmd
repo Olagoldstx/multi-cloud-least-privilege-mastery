@@ -1,0 +1,17 @@
+sequenceDiagram
+    participant Dev as Developer
+    participant IdP as Central IdP
+    participant AWS as AWS STS
+    participant AZ as Azure PIM
+    participant GCP as GCP SA
+    participant SIEM as SIEM
+
+    Dev->>IdP: Authenticate + MFA
+    Dev->>IdP: Request privilege (ticket/ref)
+    IdP-->>AWS: Federate, issue temp role
+    IdP-->>AZ: Activate PIM role (time‑bound)
+    IdP-->>GCP: Bind minimal role to SA
+    AWS-->>SIEM: CloudTrail events
+    AZ-->>SIEM: Activity logs
+    GCP-->>SIEM: Audit logs
+    SIEM-->>DevSecOps: Alert on anomalies

@@ -1,5 +1,64 @@
 # Failure Scenario: Consequences of Poor Least-Privilege Implementation
 
+```mermaid
+flowchart TD
+    A[🐛 Initial Vulnerability<br>Over-Privileged Account] --> B{🔓 Attack Vector}
+    
+    B --> C[📧 Phishing Email Clicked]
+    B --> D[🌐 Compromised Application]
+    B --> E[🔑 Stolen Credentials]
+    B --> F[👥 Insider Threat]
+    
+    C --> G[💻 Initial Compromise<br>User-level Access]
+    D --> G
+    E --> G
+    F --> G
+    
+    G --> H{❌ Excessive Permissions?}
+    H -->|No| I[✅ Containment<br>Limited Damage]
+    H -->|Yes| J[🚀 PRIVILEGE ESCALATION<br>No Additional Exploits Needed]
+    
+    J --> K[🏢 Lateral Movement<br>Network Hopping]
+    K --> L{🔍 Data Access Level}
+    
+    L --> M[📁 SENSITIVE FILES<br>Customer PII, Financial Data]
+    L --> N[🗄️ DATABASE ACCESS<br>SQL Injection Exploitation]
+    L --> O[☁️ CLOUD RESOURCES<br>S3 Buckets, VM Control]
+    L --> P[🔧 CRITICAL SYSTEMS<br>Domain Controllers, CI/CD]
+    
+    M --> Q[💸 DATA BREACH<br>GDPR/HIPAA Violations]
+    N --> R[🗃️ DATA DESTRUCTION<br>Ransomware Deployment]
+    O --> S[☁️ RESOURCE HIJACKING<br>Crypto Mining, Botnet]
+    P --> T[🛑 BUSINESS DISRUPTION<br>Production Outage]
+    
+    Q --> U[💰 FINANCIAL IMPACT<br>Fines + Recovery Costs]
+    R --> U
+    S --> U
+    T --> U
+    
+    U --> V{📉 Business Consequences}
+    V --> W[🏛️ REGULATORY FINES<br>GDPR: 4% Global Revenue]
+    V --> X[📰 REPUTATION DAMAGE<br>Customer Trust Erosion]
+    V --> Y[⚖️ LEGAL LIABILITY<br>Class Action Lawsuits]
+    V --> Z[🔒 COMPLIANCE FAILURE<br>SOC2, ISO27001 Revoked]
+    
+    W --> AA[💀 BUSINESS CONTINUITY RISK<br>Startup Failure Potential]
+    X --> AA
+    Y --> AA
+    Z --> AA
+    
+    AA --> AB[📊 POST-INCIDENT ANALYSIS]
+    AB --> AC["Root Cause: POOR LEAST-PRIVILEGE<br>• Over-provisioned service accounts<br>• Missing JIT access controls<br>• No privilege segmentation<br>• Failed regular access reviews"]
+
+    style A fill:#ffebee,stroke:#c62828
+    style J fill:#ff1744,stroke:#b71c1c,color:white
+    style Q,R,S,T fill:#ffcdd2,stroke:#d32f2f
+    style W,X,Y,Z fill:#ef9a9a,stroke:#c62828
+    style AA fill:#b71c1c,stroke:#000000,color:white
+    style AC fill:#ffebee,stroke:#c62828,stroke-width:3px
+    style I fill:#e8f5e8,stroke:#2e7d32
+```
+
 ## 🚨 Real-World Breach Scenario
 
 ### The Setup

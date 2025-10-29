@@ -1,3 +1,5 @@
+<img width="1024" height="1024" alt="file_00000000816c62309e3965308b9c7d19" src="https://github.com/user-attachments/assets/a64d42b9-f6d1-42ef-b414-0dfa264e2d89" />
+
 # 🌐 Multi-Cloud Least Privilege Mastery
 
 <div align="center">

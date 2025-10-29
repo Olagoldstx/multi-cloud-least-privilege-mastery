@@ -1,5 +1,58 @@
 # Enforcing Least Privilege: Design Patterns & Implementation
 
+```mermaid
+flowchart TD
+    A[📋 Access Request Initiated] --> B{🔍 Identity Verification}
+    
+    B -->|Failed| C[❌ Access Denied<br>Request Logged & Alerted]
+    B -->|Success| D{👥 Role Mapping}
+    
+    D --> E[🏷️ RBAC<br>Role-Based Access Control]
+    D --> F[📊 ABAC<br>Attribute-Based Access Control]
+    D --> G[🔐 ReBAC<br>Relationship-Based Access Control]
+    
+    E --> H{JIT Access Required?}
+    F --> H
+    G --> H
+    
+    H -->|Yes| I[⏰ JIT Privileges<br>Time-bound elevation]
+    H -->|No| J[📝 Static Permissions<br>Baseline access level]
+    
+    I --> K{🛡️ Policy Enforcement}
+    J --> K
+    
+    K --> L[🔒 PEP<br>Policy Enforcement Point]
+    L --> M[🧠 PDP<br>Policy Decision Point]
+    M --> N{✅ Policy Evaluation}
+    
+    N -->|Compliant| O[✅ Access Granted<br>Minimal Privileges Applied]
+    N -->|Violation| P[❌ Access Revoked<br>Security Incident Created]
+    
+    O --> Q[📈 Continuous Monitoring]
+    P --> Q
+    
+    Q --> R{🎯 Behavior Analysis}
+    R -->|Anomaly Detected| S[⚠️ Privilege Reduction<br>or Session Termination]
+    R -->|Normal| T[🔄 Session Continues<br>with Least Privilege]
+    
+    S --> U[📊 Audit Trail Updated]
+    T --> U
+    
+    U --> V[📋 Privilege Review Cycle]
+    V --> W{🔄 Regular Recertification}
+    W -->|Privileges Valid| A
+    W -->|Privileges Excessive| X[📉 Rights Deprovisioning]
+    X --> A
+
+    style A fill:#e1f5fe,stroke:#01579b
+    style C fill:#ffebee,stroke:#c62828
+    style O fill:#e8f5e8,stroke:#2e7d32
+    style P fill:#ffebee,stroke:#c62828
+    style E,F,G fill:#f3e5f5,stroke:#7b1fa2
+    style I fill:#fff3e0,stroke:#ef6c00
+    style L,M fill:#e0f2f1,stroke:#00695c
+```
+
 ## 🎯 Learning Objectives
 - Design deny-by-default policies across AWS, Azure, and GCP
 - Implement separation of duties in multi-cloud environments

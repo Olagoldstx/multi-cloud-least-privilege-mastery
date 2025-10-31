@@ -1,6 +1,6 @@
 # 09 — Capstone: Multi‑Cloud Least‑Privilege Architecture
 
-
+```mermaid 
 flowchart TD
     subgraph A [Central Identity & Policy Governance]
         direction TB
@@ -9,7 +9,7 @@ flowchart TD
         A2 --> A5{Policy Decision Point}
         A4 --> A5
     end
-```mermaid 
+
     subgraph B [Multi-Cloud Environment]
         B1[AWS Account]
         B2[Azure Tenant]
@@ -24,7 +24,6 @@ flowchart TD
         C2 -- “Denied?” --> C4[Access Denied]
         C3 --> C5[Policy Enforcement Point<br>e.g., Azure RBAC, AWS IAM]
     end
-```
 
     C5 --> B2
 
@@ -45,13 +44,4 @@ flowchart TD
     class B,B1,B2,B3 cloud
     class C,C1,C2,C3,C4,C5 enforcement
     class D,D1,D2,D3 monitoring
-**Deliverables**
-- **Design doc**: target state, trust boundaries, roles matrix.
-- **IaC**: Terraform that provisions LP roles across clouds.
-- **JIT**: Implement PIM/STS/workload identity with short durations.
-- **Detection**: SIEM rules for privilege escalation and abuse.
-- **Runbook**: quarterly access review + emergency break‑glass.
-
-**Assessment**
-- PR review checks policy granularity
-- Automated tests validate deny‑by‑default behavior
+    ```
